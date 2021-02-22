@@ -1,0 +1,32 @@
+.inputProfile {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.saveBtn {
+    display: inline-block;
+    color: black;
+    padding: 14px 25px;
+    background: #f6c245;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+}
+
+.holder {
+    margin-bottom: 30px;
+}
+
+.wrapperPhoto {
+    margin-top: 30px;
+}
+
+.wrapperPhoto label {
+    display: block;
+    font-size: 20px;
+}

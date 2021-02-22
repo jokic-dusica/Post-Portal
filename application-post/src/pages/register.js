@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React,{useState} from 'react';
 import useUser from '../hooks/userHook';
-import {withRouter} from 'react-router-dom'
+import {withRouter} from 'react-router-dom';
+import registerStyle from './registerStyle.module.css';
 
 
 const Register = (props) => {
@@ -18,14 +19,14 @@ const Register = (props) => {
     }
     return (
         <>
-            <div>
-                <label>Unesite ime i prezime</label>
-                <input type="text" name="name" onChange={inputTextHandler}/>
-                <label>Unesite username</label>
-                <input type="text" name="username" onChange={inputTextHandler}/>
-                <label>Unesite password</label>
-                <input type="password" name="password" onChange={inputTextHandler}/>
-                <button onClick = {registerConfirm}>Register</button>
+            <div className = {`${registerStyle.registerHolder} col-12`}>
+                <label>Your Name and Surname</label>
+                <input className = {registerStyle.inputStyle} type="text" name="name" onChange={inputTextHandler}/>
+                <label>Username</label>
+                <input className = {registerStyle.inputStyle}  type="text" name="username" onChange={inputTextHandler}/>
+                <label>Password</label>
+                <input className = {registerStyle.inputStyle}  type="password" name="password" onChange={inputTextHandler}/>
+                <button className = {registerStyle.registerBtn} onClick = {registerConfirm}>Register</button>
             </div>
         </>
     )

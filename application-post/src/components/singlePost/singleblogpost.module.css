@@ -1,0 +1,47 @@
+
+.wrapperbox {
+    background: white;
+    margin-right: 15px;
+    border: 1px solid black;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.wrapperImage {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.wrapperImage img {
+    width: 100%;
+}
+
+.viewMoreBtn {
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    background: #f6c245;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.viewMoreBtn a {
+    color: black;
+}
+
+.deleteBtn {
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    background: #dbbcbc;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+}

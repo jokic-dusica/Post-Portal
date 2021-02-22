@@ -1,11 +1,11 @@
 import React,{useEffect,useState} from 'react';
 import data from '../data/data';
 import CommentPost from '../components/commentPost';
-import BlogPost from '../components/blogPost';
-import CommentForm from '../components/commentForm';
+import BlogPost from '../components/blogPost/blogPost';
+import CommentForm from '../components/commentForm/commentForm';
 import usePost from '../hooks/postHook';
 import useComment from '../hooks/commentHook';
-import UpdatePost from '../components/updatePost';
+import UpdatePost from '../components/updatePost/updatePost';
 
 const BlogPostDetails = (props) => {
     const [blogInfo, setBlogInfo] = useState();

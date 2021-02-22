@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import UserProfil from '../components/userProfil';
+import UserProfil from '../components/userProfil/userProfil';
 import user from '../data/user';
 import useUser from '../hooks/userHook';
 

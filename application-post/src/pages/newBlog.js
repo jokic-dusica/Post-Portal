@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import usePost from '../hooks/postHook';
 import {withRouter} from 'react-router-dom';
 import useUser from '../hooks/userHook';
-import style from "../pages/mystyle.module.css";
+import newBlogStyle from '../pages/newBlog.module.css';
 
 const NewBlog = (props) => {
     const[newBlog, setNewBlog] = useState({title:"",description:"",date: new Date(), likes:0, dislike:0,user:null})
@@ -22,15 +22,17 @@ const NewBlog = (props) => {
     }
     return (
         <>
-        <div className={style.test}>
-            <label>Unesite Naslov</label>
-            <input type="text" name="title" onChange = {inputTextHandler}/>
-        </div>
-        <div>
-            <label>Unesite Opis</label>
-            <input type="text" name="description" onChange = {inputTextHandler}/>
-        </div>
-        <button onClick = {createNewPost}>Dodaj</button>
+        <div className = {`${newBlogStyle.newBlogWrapper} col-12`}>
+            <div>
+                <label className = {newBlogStyle.labelStyle} >Write your Title</label>
+                <input className = {newBlogStyle.inputStyle} type="text" name="title" onChange = {inputTextHandler}/>
+            </div>
+            <div>
+                <label className = {newBlogStyle.labelStyle} >Write Your Description of Post</label>
+                <input className = {newBlogStyle.inputStyle} type="text" name="description" onChange = {inputTextHandler}/>
+            </div>
+            <button className = {newBlogStyle.addNewBtn} onClick = {createNewPost}>Add New Post</button>
+        </div>       
         </>
     )
 

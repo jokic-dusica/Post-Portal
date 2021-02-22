@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import useUser from '../hooks/userHook';
 import { withRouter } from "react-router-dom";
+import loginStyle from '../pages/login.module.css';
 
 
 const Login = (props) => {
@@ -17,16 +18,16 @@ const Login = (props) => {
         }
     }
     return <>
-        <form>
+        <form className = {`${loginStyle.loginForm} col-12`}>
             <div>
-                <label>Username</label>
+                <label className = {loginStyle.labelLogin}>Username</label>
                 <input onChange={inputHandlerUser} type="text" name="username"/>
             </div>
             <div>
-                <label>Password</label>
+                <label className = {loginStyle.labelLogin}>Password</label>
                 <input onChange={inputHandlerUser} type="password" name="password"/>
             </div>
-            <button type="button" onClick = {loginUser}>Sign in</button>
+            <button className = {loginStyle.signBtn} type="button" onClick = {loginUser}>Sign in</button>
         </form>
     </>
 }

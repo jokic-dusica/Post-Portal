@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import data from '../data/data';
-import BlogPost from '../components/singleBlogPost';
+import BlogPost from './blogPost/blogPost';
 
 
 function Store() {
